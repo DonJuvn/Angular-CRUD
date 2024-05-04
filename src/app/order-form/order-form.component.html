@@ -1,0 +1,26 @@
+<form (ngSubmit)="submitForm()" #orderForm="ngForm">
+  <mat-form-field>
+    <input matInput placeholder="Order Name" name="name" ngModel required />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      placeholder="Quantity"
+      name="quantity"
+      ngModel
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      placeholder="Unit Price"
+      name="unitPrice"
+      ngModel
+      required
+    />
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Add Order</button>
+</form>
